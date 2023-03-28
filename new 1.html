@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>
+      Slide Down a Navigation Bar on Scroll using HTML CSS and JavaScript
+   </title>
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <style>
+   /* styling article tag component */
+
+   article {
+      position: fixed;
+      margin-left: 10px;
+      margin-top: 15px;
+   }
+
+   /* styling navlist */
+
+   #navlist {
+      background-color: #0074d9;
+      position: fixed;
+      left: 45%;
+      top: 0;
+      width: auto;
+      display: block;
+      transition: top 0.3s;
+   }
+
+   /* styling navlist anchor element */
+
+   #navlist a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 10px;
+      text-decoration: none;
+      font-size: 13px;
+   }
+
+   /* hover effect of navlist anchor element */
+
+   #navlist a:hover {
+      background-color: white;
+      color: black;
+   }
+
+   /*media query */
+
+   @media screen and (max-width: 600px) {
+      #navlist {
+         background-color: #0074d9;
+         position: fixed;
+         left: 30%;
+         top: -70px;
+         width: auto;
+         display: block;
+         transition: top 0.3s;
+      }
+   }
+   </style>
+</head>
+<body>
+   <!-- heading -->
+   <article>
+      <h1 style="color: rgb(0, 128, 85)">Tutorialspoint Easy to Learn</h1>
+      <p>
+         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea impedit a harum illo excepturi consectetur quisquam, voluptatum, distinctio sit eius et dolore quae eos optio dolorum. Esse pariatur similique voluptates?
+      </p>
+   </article>
+   <!-- Navbar items -->
+   <div id="navlist">
+      <a href="#">Home</a>
+      <a href="#">Tutorials</a>
+      <a href="#">AboutUs</a>
+      <a href="#">Contact Us</a>
+   </div>
+   <!-- for creating scroll -->
+   <div class="scrollable" style="padding: 15px 15px 4500px"></div>
+   <script>
+   // When the user scrolls down then
+   // slide down the navbar
+   window.onscroll = function() {
+      scroll();
+   };
+
+   function scroll() {
+      if (
+         document.body.scrollTop > 20 ||
+         document.documentElement.scrollTop > 20
+      ) {
+         document.getElementById("navlist").style.top = "-60px";
+      } else {
+         document.getElementById("navlist").style.top = "0";
+      }
+   }
+   </script>
+</body>
+</html>

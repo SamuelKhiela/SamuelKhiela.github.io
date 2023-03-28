@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<style>
+
+body {
+  font-family: "Sofia", sans-serif;
+  background-image: url("bg4.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.ctrimg{
+  display: grid;
+  place-items: right;
+  padding: 10px;
+  position: fixed;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 20px;
+  background-color: none;
+  opacity: 0.9;
+  position: fixed;
+  top: 0;
+  width: 96.4%
+}
+
+li{
+  float: right;
+}
+
+li a{
+  display: block;
+  color: #a7876c;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: bold;
+  }
+  
+li a:hover:not(.active) {
+  background-color: none;
+  color: black;
+}
+
+.active{
+  background-color: none;
+  color: #4f749c;
+}
+
+.number{
+  display: grid;
+  place-items: center;
+  padding: 100px;
+}
+
+.resimg{
+  max-width: 100%;
+  height: auto;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 800px) {
+  .ctrimg, .number{   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<ul>
+	<li><a href="Our Gallery.html">Our Gallery</a></li>
+	<li><a class="active" href="Our Celebrations.html">Our Celebrations</a></li>
+	<li><a href="Our Story.html">Our Story</a></li>
+	<li><a href="Our Home.html">Our Home</a></li>
+</ul>
+
+<div class="ctrimg">
+<a href="Front.html"><img src="us7.png" alt="Circle Transparent" style="width:160px;height:50px;margin-left:15px;"></a>
+</div>
+
+<div class="number">
+<img src="p18.png" alt="Circle Transparent" class="resimg" style="width:1500px;height:200px;margin-left:15px;"></a>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="cc1.png">
+      <img src="f1.png" alt="First Anniversary" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="f2.png">
+      <img src="f2.png" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="f3.png">
+      <img src="f3.png" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="cc4.png">
+      <img src="f4.png" alt="Fourth Anniversary" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+</body>
+</html>
